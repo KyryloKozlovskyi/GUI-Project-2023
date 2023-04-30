@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <title>Java Cafe and Restaurant/home</title>
+  </head>
+    <body>
+    <!-- Navbar for easy use - Fionn McCarthy -->
+    <div class="pt-2">
+        <nav class="navbar navbar-expand-sm navbar-white bg-white">
+            <img class="d-inline-block align-top" src="../images/java_logo.jpg" alt="logo" height="60" width="60"/>
+            <div class="collapse navbar-collapse" id="navigation">
+                <ul class="navbar-nav">
+                    <li class="nav-item active"><a class="nav-link text-dark" href="./index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./menu.html">Menu</a></li>
+                    <li class="nav-item "><a class="nav-link" href="./Sponsors.html">Sponsors</a></li>
+                    <li class="nav-item "><a class="nav-link" href="./checkout.html">Click and Collect</a></li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+
+    <!--      Adam Gallagher      -->
+
+    <style>
+        .container {display: grid;
+                    grid-template-columns: 50% 75%;
+                    grid-gap: 60px;
+                    margin: 0px;}
+        
+        .box2 {background-color: grey;}
+
+    </style>
+
+    <br>
+
+    <br>
+    <div class="container">
+        <div><div class="row">
+            <div class="col-4">
+              <div id="list-example" class="list-group">
+                <a class="list-group-item list-group-item-action" href="#list-item-1">Item 1</a>
+                <a class="list-group-item list-group-item-action" href="#list-item-2">Item 2</a>
+                <a class="list-group-item list-group-item-action" href="#list-item-3">Item 3</a>
+                <a class="list-group-item list-group-item-action" href="#list-item-4">Item 4</a>
+              </div>
+            </div>
+            <div class="col-8" style="height: 500px;overflow-y: scroll;">
+              <div data-bs-spy="scroll" data-bs-target="#list-example" data-bs-smooth-scroll="true" class="scrollspy-example" tabindex="0">
+    
+    
+                <h4 id="list-item-1">
+                    Dish 1 
+                    <div class="btn-group" role="group" aria-label="Basic example">
+                    <button type="button" class="btn btn-primary" onclick="item_remove_dish1(),update_cost()">-</button>
+                    <div class="btn btn-primary" id="item1">0</div>
+                    <button type="button" class="btn btn-primary" onclick="item_add_dish1(),update_cost()">+</button>
+                  </div>
+                </h4>
+                <h6>€5</h6>
+                <p>Dish contains: <br> Gluten <br> Eggs <br> Milk <br> Wheat</p>
+    
+    
+                <h4 id="list-item-2">
+                    Dish 2 
+                    <div class="btn-group" role="group" aria-label="Basic example">
+                    <button type="button" class="btn btn-primary" onclick="item_remove_dish2(),update_cost()">-</button>
+                    <button type="button" class="btn btn-primary" id="item2">0</button>
+                    <button type="button" class="btn btn-primary" onclick="item_add_dish2(),update_cost()">+</button>
+                  </div>
+                </h4>
+                <h6>€5</h6>
+                <p>Dish contains: <br> Gluten <br> Eggs <br> Milk <br> Wheat</p>
+    
+    
+                <h4 id="list-item-3">
+                    Dish 3 
+                    <div class="btn-group" role="group" aria-label="Basic example">
+                    <button type="button" class="btn btn-primary" onclick="item_remove_dish3(),update_cost()">-</button>
+                    <button type="button" class="btn btn-primary" id="item3">0</button>
+                    <button type="button" class="btn btn-primary" onclick="item_add_dish3(),update_cost()">+</button>
+                  </div>
+                </h4>
+                <h6>€5</h6>
+                <p>Dish contains: <br> Gluten <br> Eggs <br> Milk <br> Wheat</p>
+    
+    
+                <h4 id="list-item-4">
+                    Dish 4 
+                    <div class="btn-group" role="group" aria-label="Basic example">
+                    <button type="button" class="btn btn-primary" onclick="item_remove_dish4(),update_cost()">-</button>
+                    <button type="button" class="btn btn-primary" id="item4">0</button>
+                    <button type="button" class="btn btn-primary" onclick="item_add_dish4(),update_cost()">+</button>
+                  </div>
+                </h4>
+                <h6>€5</h6>
+                <p>Dish contains: <br> Gluten <br> Eggs <br> Milk <br> Wheat</p>
+    
+    
+              </div>
+            </div>
+        </div>
+    </div>
+        <div id="box2"> 
+            <div class="btn-group" role="group" aria-label="Payment">
+                <button type="button" class="btn btn-primary" onclick="payment()">Pay Now</button>
+                <button type="button" class="btn btn-primary" id="Ammount">€0</button>
+            </div>
+            <div id="paymentScreen">
+            <br>
+            <div style="height: 75px;">
+                <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+                    <symbol id="check-circle-fill" viewBox="0 0 16 16">
+                        <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"/>
+                    </symbol>
+                </svg>
+                <div class="h-75 alert alert-success d-flex align-items-center" role="alert">
+                <svg class="h-75 bi flex-shrink-0 me-2" role="img" aria-label="Success:"><use xlink:href="#check-circle-fill"/></svg>
+                <div>
+                    Payment Successful 
+                </div>
+                </div>
+                <table class="table">
+                <thead>
+                <tr>
+                <th scope="col">Order #</th>
+                <th scope="col">Print Time</th>
+                <th scope="col">Ready For</th>
+                <th scope="col">Cost</th>
+                </tr>
+                </thead>
+                <tbody class="table-group-divider">
+                    <tr>
+                    <th scope="row" id="orderNum"></th>
+                    <td id="print"></td>
+                    <td id="finish"></td>
+                    <td id="price-of">0</td>
+                    </tr>
+                </tbody>
+                </table>
+            </div>
+        </div></div>
+    </div>
+
+    <script src="../js/Main.js"></script>
+    </body>
+    
