@@ -1,6 +1,8 @@
 # GUI Group Project 2023
 
-<b>Made by Group J:</b><br>
-    <i>Adam Gallagher</i><br>
-    <i>Fionn McCarthy</i><br>
-    <i>Kyrylo Kozlovskyi</i><br>
+<b><h3>Made by Group J:</h3></b><br>
+<ul>
+    <li><i>Adam Gallagher</i><br></li>
+    <li><i>Fionn McCarthy</i><br></li>
+    <li><i>Kyrylo Kozlovskyi</i><br></li>
+</ul>
