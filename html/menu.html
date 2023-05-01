@@ -2,8 +2,10 @@
 <!doctype html>
 <html lang="en">
    <head>
+      <!--Meta tags for bootstrap-->
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      <!--Connected stylesheets-->
       <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
       <link rel="stylesheet" href="../css/menu_styles.css">
       <title>Menu</title>
@@ -23,6 +25,7 @@
                            <li class="nav-item"><a class="nav-link" href="./menu.html">Menu</a></li>
                            <li class="nav-item "><a class="nav-link" href="./Sponsors.html">Sponsors</a></li>
                            <li class="nav-item "><a class="nav-link" href="./checkout.html">Click and Collect</a></li>
+                           <li class="nav-item align-items-end"><a class="nav-link" href="./checkout.html">Basket</a></li>
                         </ul>
                      </div>
                   </nav>
@@ -31,6 +34,7 @@
          </div>
          <!--Menu grid - Kyrylo Kozlovskyi-->
          <!--Sandwiches-->
+         <!--1st page divider-->
          <div class="row align-items-end text-center">
             <div class="col">
                <hr class="hr w-50"/>
@@ -38,17 +42,22 @@
                <hr class="hr w-50"/>
             </div>
          </div>
+         <!--1st menu row-->
          <div class="row align-items-end text-center">
             <div class="col">
+               <!--Image with tooltips feature(when mouse is over the image description(dish contents) will pop up)-->
                <span class="contents_tt" data-bs-placement="bottom" title="Contains: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.">
                   <img src="../images/menu_images/grilled_cheese_sandwich.png" class="img-fluid p-2 image_shadow" alt="Grilled Cheese Sandwich">
                </span>
+               <!--Menu item description-->
                <p class="h5 mt-2 description_font">Grilled Cheese Sandwich - 2.99€</p>
+               <!--Button group-->
                <div class="btn-group description_font" role="group" aria-label="Basic outlined example">
                   <button type="button" class="btn btn-outline-secondary">-</button>
                   <button type="button" class="btn btn-outline-secondary">0</button>
                   <button type="button" class="btn btn-outline-secondary">+</button>
                </div>
+               <!--Button for adding items to busket-->
                <button type="button" class="btn btn-outline-secondary description_font">Add to Basket</button>
             </div>
             <div class="col">
@@ -169,9 +178,11 @@
             </div>
          </div>
       </div>
+      <!--Essentials for bootstrap 5-->
       <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
       <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+      <!--Tooltips parser-->
       <script>
          const tooltips = document.querySelectorAll(".contents_tt")
          tooltips.forEach(t => {

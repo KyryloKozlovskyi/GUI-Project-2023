@@ -1,28 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;1,300&display=swap'); /*Imports googlel fonts for general use*/
 
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;1,300&display=swap');
-
-
+/*Adds shadow for pictures from menu paage*/
 .image_shadow{
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }
 
+/*Sets maximum size of an image from menu page*/
 .img-fluid{
     max-width: 80%;
     height: auto;
 }
 
+/*Styles page dividers*/
 .dividers{
     font-family: 'Roboto', sans-serif; 
     font-weight: 300;
     font-style: italic;
 }
 
+/*Font for general use*/
 .description_font
 {
     font-family: 'Roboto', sans-serif; 
     font-weight: 400;
     font-style: normal;
 }
+
+/*Styles for the dish contens description*/
 .tooltip-inner{
     background-color: #6C757D;
     font-family: 'Roboto', sans-serif; 
@@ -30,6 +34,7 @@
     font-style: normal;
 }
 
+/*Cahnges buttons style*/
 .btn-outline-secondary{
     border-radius: 0px;
 }
