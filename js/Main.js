@@ -9,8 +9,8 @@ let total = 0;
 let printTime = 0;
 let finishTime = 0;
 
-var x = document.getElementById("paymentScreen");
-x.style.display = "none";
+
+paymentScreen.style.display = "none";
 
 function item_add_dish1(){
     dish1quant = dish1quant + 1;
@@ -68,7 +68,8 @@ function payment(){
         document.getElementById("print").innerHTML = printTime;
         document.getElementById("finish").innerHTML = finishTime;
 
-    x.style.display = "block";
+    paymentScreen.style.display = "block";
+    shoppingCart.style.display = "none";
     }
 }
 
