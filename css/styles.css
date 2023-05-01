@@ -1,0 +1,27 @@
+        /*
+            Styling for carousel to size carousel items, size background image and reduce opacity of background image - Fionn McCarthy
+        */
+        .container {
+            position: absolute;
+            bottom: 0;
+            padding-bottom: 30px;
+            left: 0;
+            right: 0;
+        }
+        .carousel-item {
+            height: 32rem;
+            background: black;
+            color: white;
+            position: relative;
+        }
+        .overlay-image {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            top: 0;
+            opacity: 0.5;
+            background-position: center;
+            background-size: cover;
+        }
+        /*-------------------------------*/
