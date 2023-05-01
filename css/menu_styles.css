@@ -1,0 +1,16 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,300&display=swap');
+
+
+.image_shadow{
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.img-fluid{
+    max-width: 80%;
+    height: auto;
+}
+
+.dividers{
+    font-family: 'Roboto', sans-serif;
+}
