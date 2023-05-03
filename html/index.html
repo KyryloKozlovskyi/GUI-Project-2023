@@ -7,8 +7,9 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/styles.css">
 
-    <title>Java Cafe and Restaurant/home</title>
+    <title>Java Cafe</title>
   </head>
   <body>
     <!-- Navbar for easy use - Fionn McCarthy -->
@@ -17,9 +18,8 @@
             <img class="d-inline-block align-top" src="../images/java_logo.jpg" alt="logo" height="60" width="60"/>
             <div class="collapse navbar-collapse" id="navigation">
                 <ul class="navbar-nav">
-                    <li class="nav-item active"><a class="nav-link text-dark" href="./index.html">Home</a></li>
+                    <li class="nav-item active"><div class="nav-link">Home</div></li>
                     <li class="nav-item"><a class="nav-link" href="./menu.html">Menu</a></li>
-                    <li class="nav-item "><a class="nav-link" href="./Sponsors.html">Sponsors</a></li>
                     <li class="nav-item "><a class="nav-link" href="./checkout.html">Click and Collect</a></li>
                 </ul>
             </div>
@@ -33,6 +33,7 @@
         <li data-target="#myCarousel" data-slide-to="1"></li>
         <li data-target="#myCarousel" data-slide-to="2"></li>
         </ol>
+
     <div class="carousel-inner">
         <!-- Carousel item 0 -->
         <div class="carousel-item active">
@@ -40,7 +41,7 @@
             </div>
             <div class="container">
                 <h1 class="text-white">Java Cafe</h1>
-                <p class="text-white">Welcome to our Website! Here you can find out more about our especially crafted Spanish menu, our proud and local Sponsors and much more!</p>
+                <p class="text-white">Welcome to our Website! Here you can find out more about our especially crafted coding-oriented menu, our carefully blended coffee, our proud and local Sponsors and much more!</p>
                 <a href="./menu.html" class="btn btn-lg btn-primary">
                 Check the Menu 
                 </a>
@@ -48,25 +49,25 @@
         </div>
         <div class="carousel-item">
             <!-- Carousel item 1 -->
-            <div class="overlay-image" style="background-image:url(../images/coffee_2.jpg)">
+            <div class="overlay-image" style="background-image:url(../images/coffee_1.jpg)">
             </div>
             <div class="container">
                 <h1 class="text-white">Java Cafe</h1>
-                <p class="text-white">Welcome to our Website! Here you can find out more about our especially crafted Spanish menu, our proud and local Sponsors and much more!</p>
-                <a href="./menu.html" class="btn btn-lg btn-primary">
-                    Find out More
+                <p class="text-white">Welcome to our Website! Here you can find out more about our especially crafted coding-oriented menu, our carefully blended coffee, our proud and local Sponsors and much more!</p>
+                <a href="./checkout.html" class="btn btn-lg btn-primary">
+                    Click and Collect
                 </a>
             </div>
         </div>
-        <div class="carousel-item">
+        <div class="carousel-item" id="soup">
             <!-- Carousel item 2 -->
             <div class="overlay-image" style="background-image:url(../images/sponsors.jpg)">
             </div>
             <div class="container">
                 <h1 class="text-white">Java Cafe</h1>
-                <p class="text-white">Welcome to our Website! Here you can find out more about our especially crafted Spanish menu, our proud and local Sponsors and much more!</p>
-                <a href="./menu.html" class="btn btn-lg btn-primary">
-                    Find out More
+                <p class="text-white">Welcome to our Website! Here you can find out more about our especially crafted coding-oriented menu, our carefully blended coffee, our proud and local Sponsors and much more!</p>
+                <a href="./sponsors.html" class="btn btn-lg btn-primary">
+                    Find out more
                 </a>
             </div>
         </div>
@@ -82,40 +83,11 @@
           </a>
     </div>
 
-    
+    <script src="../js/TestDate.js"></script>
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-    <style>
 
-        /*
-            Styling for carousel to size carousel items, size background image and reduce opacity of background image - Fionn McCarthy
-        */
-        .container {
-            position: absolute;
-            bottom: 0;
-            padding-bottom: 30px;
-            left: 0;
-            right: 0;
-        }
-        .carousel-item {
-            height: 32rem;
-            background: black;
-            color: white;
-            position: relative;
-        }
-        .overlay-image {
-            position: absolute;
-            bottom: 0;
-            left: 0;
-            right: 0;
-            top: 0;
-            opacity: 0.5;
-            background-position: center;
-            background-size: cover;
-        }
-        /*-------------------------------*/
-    </style>
   </body>
 </html>
