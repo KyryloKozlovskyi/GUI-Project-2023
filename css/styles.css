@@ -1,20 +1,23 @@
         /*
             Styling for carousel to size carousel items, size background image and reduce opacity of background image - Fionn McCarthy
         */
-        .container {
+        .active {  /* Color for active navbar items */
+            color: #212529;
+        }
+        .container {  /* Layout for carousel container */
             position: absolute;
             bottom: 0;
             padding-bottom: 30px;
             left: 0;
             right: 0;
         }
-        .carousel-item {
+        .carousel-item {  /* Formatting for background color and text color on slides */
             height: 32rem;
             background: black;
             color: white;
             position: relative;
         }
-        .overlay-image {
+        .overlay-image {  /* Positioning of background image to center image on slides */
             position: absolute;
             bottom: 0;
             left: 0;
