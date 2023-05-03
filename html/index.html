@@ -18,7 +18,6 @@
             <img class="d-inline-block align-top" src="../images/java_logo.jpg" alt="logo" height="60" width="60"/>
             <div class="collapse navbar-collapse" id="navigation">
                 <ul class="navbar-nav">
-                    <!-- Navbar list elements with links - Fionn McCarthy -->
                     <li class="nav-item active"><div class="nav-link">Home</div></li>
                     <li class="nav-item"><a class="nav-link" href="./menu.html">Menu</a></li>
                     <li class="nav-item "><a class="nav-link" href="./checkout.html">Click and Collect</a></li>
@@ -30,7 +29,6 @@
     <!-- Carousel displays link to menu and link to Sponsors - Fionn McCarthy -->
     <div id="myCarousel" class="carousel slide carousel-fade" data-ride="carousel">
     <ol class="carousel-indicators">
-        <!-- Notches for carousel navigation - Fionn McCarthy -->
         <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
         <li data-target="#myCarousel" data-slide-to="1"></li>
         <li data-target="#myCarousel" data-slide-to="2"></li>
@@ -39,7 +37,6 @@
     <div class="carousel-inner">
         <!-- Carousel item 0 -->
         <div class="carousel-item active">
-            <!-- Background image with reduced opacity to allow for dark bg color to bleed through - Fionn McCarthy -->
             <div class="overlay-image" style="background-image:url(../images/yum.jpg)">
             </div>
             <div class="container">
@@ -55,22 +52,20 @@
             <div class="overlay-image" style="background-image:url(../images/coffee_1.jpg)">
             </div>
             <div class="container">
-                <!-- Displayed text on carousel slide - Fionn McCarthy -->
                 <h1 class="text-white">Java Cafe</h1>
                 <p class="text-white">Welcome to our Website! Here you can find out more about our especially crafted coding-oriented menu, our carefully blended coffee, our proud and local Sponsors and much more!</p>
-                <!-- Bootstrap button on slide with link to checkout page - Fionn McCarthy -->
                 <a href="./checkout.html" class="btn btn-lg btn-primary">
                     Click and Collect
                 </a>
             </div>
         </div>
-        <div class="carousel-item" id="soup">
+        <div class="carousel-item">
             <!-- Carousel item 2 -->
-            <div class="overlay-image" style="background-image:url(../images/sponsors.jpg)">
+            <div class="overlay-image" id="soup" style="">  <!-- Overlay image depends on day of the week - Fionn McCarthy -->
             </div>
             <div class="container">
                 <h1 class="text-white">Java Cafe</h1>
-                <p class="text-white">Welcome to our Website! Here you can find out more about our especially crafted coding-oriented menu, our carefully blended coffee, our proud and local Sponsors and much more!</p>
+                <p class="text-white" id="soupText"></p>
                 <a href="./sponsors.html" class="btn btn-lg btn-primary">
                     Find out more
                 </a>
@@ -88,7 +83,8 @@
           </a>
     </div>
 
-    <script src="../js/TestDate.js"></script>
+    <script src="../js/SoupOfDay.js">  // Page decides soup of the day - Fionn McCarthy </script>
+
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
