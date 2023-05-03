@@ -1,4 +1,4 @@
-<!--Kyrylo Kozlovskyi-->
+<!--Menu page - Kyrylo Kozlovskyi-->
 <!doctype html>
 <html lang="en">
    <head>
@@ -22,7 +22,9 @@
                      <div class="collapse navbar-collapse" id="navigation">
                         <ul class="navbar-nav">
                            <li class="nav-item"><a class="nav-link" href="./index.html">Home</a></li>
-                           <li class="nav-item active"><div class="nav-link" >Menu</div></li>
+                           <li class="nav-item active">
+                              <div class="nav-link" >Menu</div>
+                           </li>
                            <li class="nav-item "><a class="nav-link" href="./checkout.html">Click and Collect</a></li>
                         </ul>
                      </div>
@@ -45,14 +47,19 @@
             <div class="col">
                <!--Image with tooltips feature(when mouse is over the image description(dish contents) will pop up)-->
                <span class="contents_tt" data-bs-placement="bottom" title="Contains: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.">
-                  <img src="../images/menu_images/grilled_cheese_sandwich.png" class="img-fluid p-2 image_shadow" alt="Grilled Cheese Sandwich">
+               <img src="../images/menu_images/grilled_cheese_sandwich.png" class="img-fluid p-2 image_shadow" alt="Grilled Cheese Sandwich">
                </span>
                <!--Menu item description-->
                <p class="h5 mt-2 description_font">Grilled Cheese Sandwich - 2.99€</p>
                <!--Button group-->
-               <div class="btn-group description_font" role="group" aria-label="Basic outlined example">
+               <div class="btn-group description_font" role="group" aria-label="Basic example">
+                  <!--Minus button-->
                   <button type="button" class="btn btn-outline-secondary">-</button>
-                  <button type="button" class="btn btn-outline-secondary">0</button>
+                  <!--Input Box-->
+                  <div class="input-group">
+                     <input type="text" class="form-control input_box_style" placeholder="0" aria-label="Item counter" aria-describedby="btnGroupAddon">
+                  </div>
+                  <!--Plus button-->
                   <button type="button" class="btn btn-outline-secondary">+</button>
                </div>
                <!--Button for adding items to busket-->
@@ -60,26 +67,40 @@
             </div>
             <div class="col">
                <span class="contents_tt" data-bs-placement="bottom" title="Contains: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.">
-                  <img src="../images/menu_images/grilled_chicken_sandwich.png" class="img-fluid p-2 image_shadow" alt="Grilled Chicken Sandwich">
+               <img src="../images/menu_images/grilled_chicken_sandwich.png" class="img-fluid p-2 image_shadow" alt="Grilled Chicken Sandwich">
                </span>
                <p class="h5 mt-2 description_font">Grilled Chicken Sandwich - 5.99€</p>
-               <div class="btn-group description_font description_font" role="group" aria-label="Basic outlined example">
+               <!--Button group-->
+               <div class="btn-group description_font" role="group" aria-label="Basic example">
+                  <!--Minus button-->
                   <button type="button" class="btn btn-outline-secondary">-</button>
-                  <button type="button" class="btn btn-outline-secondary">0</button>
+                  <!--Input Box-->
+                  <div class="input-group">
+                     <input type="text" class="form-control input_box_style" placeholder="0" aria-label="Item counter" aria-describedby="btnGroupAddon">
+                  </div>
+                  <!--Plus button-->
                   <button type="button" class="btn btn-outline-secondary">+</button>
                </div>
-               <button type="button" class="btn btn-outline-secondary description_font description_font">Add to Basket</button>
+               <!--Button for adding items to busket-->
+               <button type="button" class="btn btn-outline-secondary description_font">Add to Basket</button>
             </div>
             <div class="col">
                <span class="contents_tt" data-bs-placement="bottom" title="Contains: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.">
-                  <img src="../images/menu_images/ham_and_cheese_sandwich.png" class="img-fluid p-2 image_shadow" alt="Ham and Mayo Sandwich">
+               <img src="../images/menu_images/ham_and_cheese_sandwich.png" class="img-fluid p-2 image_shadow" alt="Ham and Mayo Sandwich">
                </span>
                <p class="h5 mt-2 description_font">Ham and Cheese Sandwich - 3.99€</p>
-               <div class="btn-group description_font" role="group" aria-label="Basic outlined example">
+               <!--Button group-->
+               <div class="btn-group description_font" role="group" aria-label="Basic example">
+                  <!--Minus button-->
                   <button type="button" class="btn btn-outline-secondary">-</button>
-                  <button type="button" class="btn btn-outline-secondary">0</button>
+                  <!--Input Box-->
+                  <div class="input-group">
+                     <input type="text" class="form-control input_box_style" placeholder="0" aria-label="Item counter" aria-describedby="btnGroupAddon">
+                  </div>
+                  <!--Plus button-->
                   <button type="button" class="btn btn-outline-secondary">+</button>
                </div>
+               <!--Button for adding items to busket-->
                <button type="button" class="btn btn-outline-secondary description_font">Add to Basket</button>
             </div>
          </div>
@@ -91,41 +112,63 @@
                <hr class="hr w-50"/>
             </div>
          </div>
+         <!--2nd menu row-->
          <div class="row align-items-end text-center">
             <div class="col">
                <span class="contents_tt" data-bs-placement="bottom" title="Contains: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.">
-                  <img src="../images/menu_images/latte.png" class="img-fluid p-2 image_shadow" alt="Latte">
+               <img src="../images/menu_images/latte.png" class="img-fluid p-2 image_shadow" alt="Latte">
                </span>
                <p class="h5 mt-2 description_font">Latte - 3.99€</p>
-               <div class="btn-group description_font" role="group" aria-label="Basic outlined example">
+               <!--Button group-->
+               <div class="btn-group description_font" role="group" aria-label="Basic example">
+                  <!--Minus button-->
                   <button type="button" class="btn btn-outline-secondary">-</button>
-                  <button type="button" class="btn btn-outline-secondary">0</button>
+                  <!--Input Box-->
+                  <div class="input-group">
+                     <input type="text" class="form-control input_box_style" placeholder="0" aria-label="Item counter" aria-describedby="btnGroupAddon">
+                  </div>
+                  <!--Plus button-->
                   <button type="button" class="btn btn-outline-secondary">+</button>
                </div>
+               <!--Button for adding items to busket-->
                <button type="button" class="btn btn-outline-secondary description_font">Add to Basket</button>
             </div>
             <div class="col">
                <span class="contents_tt" data-bs-placement="bottom" title="Contains: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.">
-                  <img src="../images/menu_images/espresso.png" class="img-fluid p-2 image_shadow" alt="Espresso">
+               <img src="../images/menu_images/espresso.png" class="img-fluid p-2 image_shadow" alt="Espresso">
                </span>
                <p class="h5 mt-2 description_font">Espresso - 2.99€</p>
-               <div class="btn-group description_font" role="group" aria-label="Basic outlined example">
+               <!--Button group-->
+               <div class="btn-group description_font" role="group" aria-label="Basic example">
+                  <!--Minus button-->
                   <button type="button" class="btn btn-outline-secondary">-</button>
-                  <button type="button" class="btn btn-outline-secondary">0</button>
+                  <!--Input Box-->
+                  <div class="input-group">
+                     <input type="text" class="form-control input_box_style" placeholder="0" aria-label="Item counter" aria-describedby="btnGroupAddon">
+                  </div>
+                  <!--Plus button-->
                   <button type="button" class="btn btn-outline-secondary">+</button>
                </div>
+               <!--Button for adding items to busket-->
                <button type="button" class="btn btn-outline-secondary description_font">Add to Basket</button>
             </div>
             <div class="col">
                <span class="contents_tt" data-bs-placement="bottom" title="Contains: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.">
-                  <img src="../images/menu_images/tea.png" class="img-fluid p-2 image_shadow" alt="Tea">
+               <img src="../images/menu_images/tea.png" class="img-fluid p-2 image_shadow" alt="Tea">
                </span>
                <p class="h5 mt-2 description_font">Tea - 2.50€</p>
-               <div class="btn-group description_font" role="group" aria-label="Basic outlined example">
+               <!--Button group-->
+               <div class="btn-group description_font" role="group" aria-label="Basic example">
+                  <!--Minus button-->
                   <button type="button" class="btn btn-outline-secondary">-</button>
-                  <button type="button" class="btn btn-outline-secondary">0</button>
+                  <!--Input Box-->
+                  <div class="input-group">
+                     <input type="text" class="form-control input_box_style" placeholder="0" aria-label="Item counter" aria-describedby="btnGroupAddon">
+                  </div>
+                  <!--Plus button-->
                   <button type="button" class="btn btn-outline-secondary">+</button>
                </div>
+               <!--Button for adding items to busket-->
                <button type="button" class="btn btn-outline-secondary description_font">Add to Basket</button>
             </div>
          </div>
@@ -137,41 +180,63 @@
                <hr class="hr w-50"/>
             </div>
          </div>
+         <!--3rd menu row-->
          <div class="row align-items-end text-center pb-4">
             <div class="col">
                <span class="contents_tt" data-bs-placement="bottom" title="Contains: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.">
-                  <img src="../images/menu_images/chocolate_chip_cookie.png" class="img-fluid p-2 image_shadow" alt="Chocolate Chip Cookie">
+               <img src="../images/menu_images/chocolate_chip_cookie.png" class="img-fluid p-2 image_shadow" alt="Chocolate Chip Cookie">
                </span>
                <p class="h5 mt-2 description_font">Chocolate Chip Cookie - 2.00€</p>
-               <div class="btn-group description_font" role="group" aria-label="Basic outlined example">
+               <!--Button group-->
+               <div class="btn-group description_font" role="group" aria-label="Basic example">
+                  <!--Minus button-->
                   <button type="button" class="btn btn-outline-secondary">-</button>
-                  <button type="button" class="btn btn-outline-secondary">0</button>
+                  <!--Input Box-->
+                  <div class="input-group">
+                     <input type="text" class="form-control input_box_style" placeholder="0" aria-label="Item counter" aria-describedby="btnGroupAddon">
+                  </div>
+                  <!--Plus button-->
                   <button type="button" class="btn btn-outline-secondary">+</button>
                </div>
+               <!--Button for adding items to busket-->
                <button type="button" class="btn btn-outline-secondary description_font">Add to Basket</button>
             </div>
             <div class="col">
                <span class="contents_tt" data-bs-placement="bottom" title="Contains: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.">
-                  <img src="../images/menu_images/berry_muffin.png" class="img-fluid p-2 image_shadow" alt="Berry Muffin">
+               <img src="../images/menu_images/berry_muffin.png" class="img-fluid p-2 image_shadow" alt="Berry Muffin">
                </span>
                <p class="h5 mt-2 description_font description_font">Berry Muffin - 2.50€</p>
-               <div class="btn-group" role="group" aria-label="Basic outlined example">
+               <!--Button group-->
+               <div class="btn-group description_font" role="group" aria-label="Basic example">
+                  <!--Minus button-->
                   <button type="button" class="btn btn-outline-secondary">-</button>
-                  <button type="button" class="btn btn-outline-secondary">0</button>
+                  <!--Input Box-->
+                  <div class="input-group">
+                     <input type="text" class="form-control input_box_style" placeholder="0" aria-label="Item counter" aria-describedby="btnGroupAddon">
+                  </div>
+                  <!--Plus button-->
                   <button type="button" class="btn btn-outline-secondary">+</button>
                </div>
+               <!--Button for adding items to busket-->
                <button type="button" class="btn btn-outline-secondary description_font">Add to Basket</button>
             </div>
             <div class="col">
                <span class="contents_tt" data-bs-placement="bottom" title="Contains: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.">
-                  <img src="../images/menu_images/chocolate_brownie.png" class="img-fluid p-2 image_shadow" alt="Chocolate Brownie ">
+               <img src="../images/menu_images/chocolate_brownie.png" class="img-fluid p-2 image_shadow" alt="Chocolate Brownie ">
                </span>
                <p class="h5 mt-2 description_font">Chocolate Brownie - 3.20€</p>
-               <div class="btn-group description_font" role="group" aria-label="Basic outlined example">
+               <!--Button group-->
+               <div class="btn-group description_font" role="group" aria-label="Basic example">
+                  <!--Minus button-->
                   <button type="button" class="btn btn-outline-secondary">-</button>
-                  <button type="button" class="btn btn-outline-secondary">0</button>
+                  <!--Input Box-->
+                  <div class="input-group">
+                     <input type="text" class="form-control input_box_style" placeholder="0" aria-label="Item counter" aria-describedby="btnGroupAddon">
+                  </div>
+                  <!--Plus button-->
                   <button type="button" class="btn btn-outline-secondary">+</button>
                </div>
+               <!--Button for adding items to busket-->
                <button type="button" class="btn btn-outline-secondary description_font">Add to Basket</button>
             </div>
          </div>
