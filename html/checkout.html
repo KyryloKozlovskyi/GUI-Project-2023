@@ -29,12 +29,12 @@
     <!--      Adam Gallagher      -->
 
     <style>
-        .container {display: grid;
-                    grid-template-columns: 50% 75%;
+        .container{
+                    display: grid;
+                    grid-template-columns: 75% 55%;
                     grid-gap: 60px;
-                    margin: 0px;}
-        
-        .box2 {background-color: grey;}
+                    margin: 0px;
+                  }
 
     </style>
 
@@ -45,64 +45,136 @@
         <div><div class="row">
             <div class="col-4">
               <div id="list-example" class="list-group">
-                <a class="list-group-item list-group-item-action" href="#list-item-1">Item 1</a>
-                <a class="list-group-item list-group-item-action" href="#list-item-2">Item 2</a>
-                <a class="list-group-item list-group-item-action" href="#list-item-3">Item 3</a>
-                <a class="list-group-item list-group-item-action" href="#list-item-4">Item 4</a>
+                <a class="list-group-item list-group-item-action bg-primary" href="#list-item-1" style="opacity: .7; color: #000;">Food</a>
+                <a class="list-group-item list-group-item-action bg-primary" href="#list-item-4" style="opacity: .8; color: #000;">Special</a>
+                <a class="list-group-item list-group-item-action bg-primary" href="#list-item-5" style="opacity: .9; color: #000;">Drink</a>
+                <a class="list-group-item list-group-item-action bg-primary" href="#list-item-8" style="color: #000;">Desserts</a>
               </div>
             </div>
-            <div class="col-8" style="height: 500px;overflow-y: scroll;">
+            <div class="col-8" style="height: 750px;overflow-y: scroll;">
               <div data-bs-spy="scroll" data-bs-target="#list-example" data-bs-smooth-scroll="true" class="scrollspy-example" tabindex="0">
     
-    
                 <h4 id="list-item-1">
-                    Dish 1 
+                    Grilled Cheese Sandwich 
                     <div class="btn-group" role="group" aria-label="Basic example">
                     <button type="button" class="btn btn-primary" onclick="item_remove_dish1(),update_cost()">-</button>
                     <div class="btn btn-primary" id="item1">0</div>
                     <button type="button" class="btn btn-primary" onclick="item_add_dish1(),update_cost()">+</button>
                   </div>
                 </h4>
-                <h6>€5</h6>
-                <p>Dish contains: <br> Gluten <br> Eggs <br> Milk <br> Wheat</p>
-    
-    
+                <h6>€2.99</h6>
+                <img src="../images/menu_images/grilled_cheese_sandwich.png" alt="Soup Picture" width="200px">
+                <p>Our tasty tasty meals are all homemade in house today, <i>if you have any allergy requirements please contact a member of staff for more information</i></p>
+
                 <h4 id="list-item-2">
-                    Dish 2 
-                    <div class="btn-group" role="group" aria-label="Basic example">
-                    <button type="button" class="btn btn-primary" onclick="item_remove_dish2(),update_cost()">-</button>
-                    <button type="button" class="btn btn-primary" id="item2">0</button>
-                    <button type="button" class="btn btn-primary" onclick="item_add_dish2(),update_cost()">+</button>
+                  Grilled Chicken Sandwich
+                  <div class="btn-group" role="group" aria-label="Basic example">
+                  <button type="button" class="btn btn-primary" onclick="item_remove_dish2(),update_cost()">-</button>
+                  <div class="btn btn-primary" id="item2">0</div>
+                  <button type="button" class="btn btn-primary" onclick="item_add_dish2(),update_cost()">+</button>
                   </div>
                 </h4>
-                <h6>€5</h6>
-                <p>Dish contains: <br> Gluten <br> Eggs <br> Milk <br> Wheat</p>
-    
-    
+                <h6>€5.99</h6>
+                <img src="../images/menu_images/grilled_chicken_sandwich.png" alt="Soup Picture" width="200px">
+                <p>Our tasty tasty meals are all homemade in house today, <i>if you have any allergy requirements please contact a member of staff for more information</i></p>          
+
                 <h4 id="list-item-3">
-                    Dish 3 
-                    <div class="btn-group" role="group" aria-label="Basic example">
-                    <button type="button" class="btn btn-primary" onclick="item_remove_dish3(),update_cost()">-</button>
-                    <button type="button" class="btn btn-primary" id="item3">0</button>
-                    <button type="button" class="btn btn-primary" onclick="item_add_dish3(),update_cost()">+</button>
+                  Ham and Cheese Sandwich
+                  <div class="btn-group" role="group" aria-label="Basic example">
+                  <button type="button" class="btn btn-primary" onclick="item_remove_dish3(),update_cost()">-</button>
+                  <div class="btn btn-primary" id="item3">0</div>
+                  <button type="button" class="btn btn-primary" onclick="item_add_dish3(),update_cost()">+</button>
                   </div>
                 </h4>
-                <h6>€5</h6>
-                <p>Dish contains: <br> Gluten <br> Eggs <br> Milk <br> Wheat</p>
-    
-    
+                <h6>€3.99</h6>
+                <img src="../images/menu_images/ham_and_cheese_sandwich.png" alt="Soup Picture" width="200px">
+                <p>Our tasty tasty meals are all homemade in house today, <i>if you have any allergy requirements please contact a member of staff for more information</i></p>
+
                 <h4 id="list-item-4">
-                    Dish 4 
-                    <div class="btn-group" role="group" aria-label="Basic example">
-                    <button type="button" class="btn btn-primary" onclick="item_remove_dish4(),update_cost()">-</button>
-                    <button type="button" class="btn btn-primary" id="item4">0</button>
-                    <button type="button" class="btn btn-primary" onclick="item_add_dish4(),update_cost()">+</button>
+                  Soup Of The Day
+                  <div class="btn-group" role="group" aria-label="Basic example">
+                  <button type="button" class="btn btn-primary" onclick="item_remove_dish4(),update_cost()">-</button>
+                  <div class="btn btn-primary" id="item4">0</div>
+                  <button type="button" class="btn btn-primary" onclick="item_add_dish4(),update_cost()">+</button>
                   </div>
                 </h4>
-                <h6>€5</h6>
-                <p>Dish contains: <br> Gluten <br> Eggs <br> Milk <br> Wheat</p>
-    
-    
+                <h6>€4.99</h6>
+                <p id="SoupOfTheDay"></p>
+                <img src="../images/checkout_images/soup-day-hand-written-inscription-lettering-card-design-bowl-cafe-market-menu-shop-bar-soup-day-hand-221560421.jpg" alt="Soup Picture" width="200px">
+                <p>Our tasty tasty meals are all homemade in house today, <i>if you have any allergy requirements please contact a member of staff for more information</i></p>
+
+                <h4 id="list-item-5">
+                  Latte
+                  <div class="btn-group" role="group" aria-label="Basic example">
+                  <button type="button" class="btn btn-primary" onclick="item_remove_dish5(),update_cost()">-</button>
+                  <div class="btn btn-primary" id="item5">0</div>
+                  <button type="button" class="btn btn-primary" onclick="item_add_dish5(),update_cost()">+</button>
+                  </div>
+                </h4>
+                <h6>€3.99</h6>
+                <img src="../images/menu_images/latte.png" alt="Soup Picture" width="200px">
+                <p>All of our coffees are brewed by a trained barista using only the best beans</p>
+              
+                <h4 id="list-item-6">
+                  Espresso  
+                  <div class="btn-group" role="group" aria-label="Basic example">
+                  <button type="button" class="btn btn-primary" onclick="item_remove_dish6(),update_cost()">-</button>
+                  <div class="btn btn-primary" id="item6">0</div>
+                  <button type="button" class="btn btn-primary" onclick="item_add_dish6(),update_cost()">+</button>
+                  </div>
+                </h4>
+                <h6>€2.99</h6>
+                <img src="../images/menu_images/espresso.png" alt="Soup Picture" width="200px">
+                <p>All of our coffees are brewed by a trained barista using only the best beans</p>
+            
+                <h4 id="list-item-7">
+                  Tea 
+                  <div class="btn-group" role="group" aria-label="Basic example">
+                  <button type="button" class="btn btn-primary" onclick="item_remove_dish7(),update_cost()">-</button>
+                  <div class="btn btn-primary" id="item7">0</div>
+                  <button type="button" class="btn btn-primary" onclick="item_add_dish7(),update_cost()">+</button>
+                  </div>
+                </h4>
+                <h6>€2.50</h6>
+                <img src="../images/menu_images/tea.png" alt="Soup Picture" width="200px">
+                <p>All of our teas are brewed by a trained barista using only the best beans</p>
+          
+                <h4 id="list-item-8">
+                  Chocolate Chip Cookie     
+                  <div class="btn-group" role="group" aria-label="Basic example">
+                  <button type="button" class="btn btn-primary" onclick="item_remove_dish8(),update_cost()">-</button>
+                  <div class="btn btn-primary" id="item8">0</div>
+                  <button type="button" class="btn btn-primary" onclick="item_add_dish8(),update_cost()">+</button>
+                  </div>
+                </h4>
+                <h6>€2</h6>
+                <img src="../images/menu_images/chocolate_chip_cookie.png" alt="Soup Picture" width="200px">
+                <p>Our tasty deserts are all homemade in house today, <i>if you have any allergy requirements please contact a member of staff for more information</i></p>
+            
+                <h4 id="list-item-9">
+                  Berry Muffin   
+                  <div class="btn-group" role="group" aria-label="Basic example">
+                  <button type="button" class="btn btn-primary" onclick="item_remove_dish9(),update_cost()">-</button>
+                  <div class="btn btn-primary" id="item9">0</div>
+                  <button type="button" class="btn btn-primary" onclick="item_add_dish9(),update_cost()">+</button>
+                  </div>
+                </h4>
+                <h6>€2.50</h6>
+                <img src="../images/menu_images/berry_muffin.png" alt="Soup Picture" width="200px">
+                <p>Our tasty deserts are all homemade in house today, <i>if you have any allergy requirements please contact a member of staff for more information</i></p>
+      
+                <h4 id="list-item-10">
+                  Chocolate Brownie       
+                  <div class="btn-group" role="group" aria-label="Basic example">
+                  <button type="button" class="btn btn-primary" onclick="item_remove_dish10(),update_cost()">-</button>
+                  <div class="btn btn-primary" id="item10">0</div>
+                  <button type="button" class="btn btn-primary" onclick="item_add_dish10(),update_cost()">+</button>
+                  </div>
+                </h4>
+                <h6>€3.20</h6>
+                <img src="../images/menu_images/chocolate_brownie.png" alt="Soup Picture" width="200px">
+                <p>Our tasty deserts are all homemade in house today, <i>if you have any allergy requirements please contact a member of staff for more information</i></p>
+
               </div>
             </div>
         </div>
