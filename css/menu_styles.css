@@ -42,7 +42,7 @@
 
 /*Button group width*/
 .btn-group {
-	width: 110px;
+	width: 65px;
 }
 
 /*Sets custom input box styles*/
@@ -58,4 +58,9 @@
 	box-shadow: none !important;
 	outline: 0px !important;
 	border-color: #6C757D;
+}
+
+/*Makes number input box arrows visible all the time*/
+input[type=number]::-webkit-inner-spin-button {
+    opacity: 1
 }

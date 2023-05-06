@@ -53,14 +53,11 @@
                <p class="h5 mt-2 description_font">Grilled Cheese Sandwich - 2.99€</p>
                <!--Button group-->
                <div class="btn-group description_font" role="group" aria-label="Basic example">
-                  <!--Minus button-->
-                  <button type="button" class="btn btn-outline-secondary" id="amountBox1Minus">-</button>
                   <!--Input Box-->
                   <div class="input-group">
-                     <input type="text" class="form-control input_box_style" placeholder="0" aria-label="Item counter" aria-describedby="btnGroupAddon" id="amountBox1">
+                     <!--min="0" oninput="validity.valid||(value='');" max="99" restricts user input, everything except of numbers between min and max values are not allowed-->
+                     <input type="number" class="form-control input_box_style" placeholder="0" aria-label="Item counter" aria-describedby="btnGroupAddon" id="amountBox1" min="0" oninput="validity.valid||(value='');" max="99">
                   </div>
-                  <!--Plus button-->
-                  <button type="button" class="btn btn-outline-secondary" id="amountBox1Plus">+</button>
                </div>
                <!--Button for adding items to busket-->
                <button type="button" class="btn btn-outline-secondary description_font" id="buttonDish1">Add to Basket</button>
@@ -72,17 +69,14 @@
                <p class="h5 mt-2 description_font">Grilled Chicken Sandwich - 5.99€</p>
                <!--Button group-->
                <div class="btn-group description_font" role="group" aria-label="Basic example">
-                  <!--Minus button-->
-                  <button type="button" class="btn btn-outline-secondary">-</button>
                   <!--Input Box-->
                   <div class="input-group">
-                     <input type="text" class="form-control input_box_style" placeholder="0" aria-label="Item counter" aria-describedby="btnGroupAddon">
+                     <!--min="0" oninput="validity.valid||(value='');" max="99" restricts user input, everything except of numbers between min and max values are not allowed-->
+                     <input type="number" class="form-control input_box_style" placeholder="0" aria-label="Item counter" aria-describedby="btnGroupAddon" id="amountBox2" min="0" oninput="validity.valid||(value='');" max="99">
                   </div>
-                  <!--Plus button-->
-                  <button type="button" class="btn btn-outline-secondary">+</button>
                </div>
                <!--Button for adding items to busket-->
-               <button type="button" class="btn btn-outline-secondary description_font">Add to Basket</button>
+               <button type="button" class="btn btn-outline-secondary description_font" id="buttonDish2">Add to Basket</button>
             </div>
             <div class="col">
                <span class="contents_tt" data-bs-placement="bottom" title="Contains: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.">
@@ -91,17 +85,14 @@
                <p class="h5 mt-2 description_font">Ham and Cheese Sandwich - 3.99€</p>
                <!--Button group-->
                <div class="btn-group description_font" role="group" aria-label="Basic example">
-                  <!--Minus button-->
-                  <button type="button" class="btn btn-outline-secondary">-</button>
                   <!--Input Box-->
                   <div class="input-group">
-                     <input type="text" class="form-control input_box_style" placeholder="0" aria-label="Item counter" aria-describedby="btnGroupAddon">
+                     <!--min="0" oninput="validity.valid||(value='');" max="99" restricts user input, everything except of numbers between min and max values are not allowed-->
+                     <input type="number" class="form-control input_box_style" placeholder="0" aria-label="Item counter" aria-describedby="btnGroupAddon" id="amountBox3" min="0" oninput="validity.valid||(value='');" max="99">
                   </div>
-                  <!--Plus button-->
-                  <button type="button" class="btn btn-outline-secondary">+</button>
                </div>
                <!--Button for adding items to busket-->
-               <button type="button" class="btn btn-outline-secondary description_font">Add to Basket</button>
+               <button type="button" class="btn btn-outline-secondary description_font" id="buttonDish3">Add to Basket</button>
             </div>
          </div>
          <!--Hot drinks-->
@@ -121,17 +112,14 @@
                <p class="h5 mt-2 description_font">Latte - 3.99€</p>
                <!--Button group-->
                <div class="btn-group description_font" role="group" aria-label="Basic example">
-                  <!--Minus button-->
-                  <button type="button" class="btn btn-outline-secondary">-</button>
                   <!--Input Box-->
                   <div class="input-group">
-                     <input type="text" class="form-control input_box_style" placeholder="0" aria-label="Item counter" aria-describedby="btnGroupAddon">
+                     <!--min="0" oninput="validity.valid||(value='');" max="99" restricts user input, everything except of numbers between min and max values are not allowed-->
+                     <input type="number" class="form-control input_box_style" placeholder="0" aria-label="Item counter" aria-describedby="btnGroupAddon" id="amountBox4" min="0" oninput="validity.valid||(value='');" max="99">
                   </div>
-                  <!--Plus button-->
-                  <button type="button" class="btn btn-outline-secondary">+</button>
                </div>
                <!--Button for adding items to busket-->
-               <button type="button" class="btn btn-outline-secondary description_font">Add to Basket</button>
+               <button type="button" class="btn btn-outline-secondary description_font" id="buttonDish4">Add to Basket</button>
             </div>
             <div class="col">
                <span class="contents_tt" data-bs-placement="bottom" title="Contains: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.">
@@ -140,17 +128,14 @@
                <p class="h5 mt-2 description_font">Espresso - 2.99€</p>
                <!--Button group-->
                <div class="btn-group description_font" role="group" aria-label="Basic example">
-                  <!--Minus button-->
-                  <button type="button" class="btn btn-outline-secondary">-</button>
                   <!--Input Box-->
                   <div class="input-group">
-                     <input type="text" class="form-control input_box_style" placeholder="0" aria-label="Item counter" aria-describedby="btnGroupAddon">
+                     <!--min="0" oninput="validity.valid||(value='');" max="99" restricts user input, everything except of numbers between min and max values are not allowed-->
+                     <input type="number" class="form-control input_box_style" placeholder="0" aria-label="Item counter" aria-describedby="btnGroupAddon" id="amountBox5" min="0" oninput="validity.valid||(value='');" max="99">
                   </div>
-                  <!--Plus button-->
-                  <button type="button" class="btn btn-outline-secondary">+</button>
                </div>
                <!--Button for adding items to busket-->
-               <button type="button" class="btn btn-outline-secondary description_font">Add to Basket</button>
+               <button type="button" class="btn btn-outline-secondary description_font" id="buttonDish5">Add to Basket</button>
             </div>
             <div class="col">
                <span class="contents_tt" data-bs-placement="bottom" title="Contains: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.">
@@ -159,17 +144,14 @@
                <p class="h5 mt-2 description_font">Tea - 2.50€</p>
                <!--Button group-->
                <div class="btn-group description_font" role="group" aria-label="Basic example">
-                  <!--Minus button-->
-                  <button type="button" class="btn btn-outline-secondary">-</button>
                   <!--Input Box-->
                   <div class="input-group">
-                     <input type="text" class="form-control input_box_style" placeholder="0" aria-label="Item counter" aria-describedby="btnGroupAddon">
+                     <!--min="0" oninput="validity.valid||(value='');" max="99" restricts user input, everything except of numbers between min and max values are not allowed-->
+                     <input type="number" class="form-control input_box_style" placeholder="0" aria-label="Item counter" aria-describedby="btnGroupAddon" id="amountBox6" min="0" oninput="validity.valid||(value='');" max="99">
                   </div>
-                  <!--Plus button-->
-                  <button type="button" class="btn btn-outline-secondary">+</button>
                </div>
                <!--Button for adding items to busket-->
-               <button type="button" class="btn btn-outline-secondary description_font">Add to Basket</button>
+               <button type="button" class="btn btn-outline-secondary description_font" id="buttonDish6">Add to Basket</button>
             </div>
          </div>
          <!--Desserts-->
@@ -189,17 +171,14 @@
                <p class="h5 mt-2 description_font">Chocolate Chip Cookie - 2.00€</p>
                <!--Button group-->
                <div class="btn-group description_font" role="group" aria-label="Basic example">
-                  <!--Minus button-->
-                  <button type="button" class="btn btn-outline-secondary">-</button>
                   <!--Input Box-->
                   <div class="input-group">
-                     <input type="text" class="form-control input_box_style" placeholder="0" aria-label="Item counter" aria-describedby="btnGroupAddon">
+                     <!--min="0" oninput="validity.valid||(value='');" max="99" restricts user input, everything except of numbers between min and max values are not allowed-->
+                     <input type="number" class="form-control input_box_style" placeholder="0" aria-label="Item counter" aria-describedby="btnGroupAddon" id="amountBox7" min="0" oninput="validity.valid||(value='');" max="99">
                   </div>
-                  <!--Plus button-->
-                  <button type="button" class="btn btn-outline-secondary">+</button>
                </div>
                <!--Button for adding items to busket-->
-               <button type="button" class="btn btn-outline-secondary description_font">Add to Basket</button>
+               <button type="button" class="btn btn-outline-secondary description_font" id="buttonDish7">Add to Basket</button>
             </div>
             <div class="col">
                <span class="contents_tt" data-bs-placement="bottom" title="Contains: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.">
@@ -208,17 +187,14 @@
                <p class="h5 mt-2 description_font description_font">Berry Muffin - 2.50€</p>
                <!--Button group-->
                <div class="btn-group description_font" role="group" aria-label="Basic example">
-                  <!--Minus button-->
-                  <button type="button" class="btn btn-outline-secondary">-</button>
                   <!--Input Box-->
                   <div class="input-group">
-                     <input type="text" class="form-control input_box_style" placeholder="0" aria-label="Item counter" aria-describedby="btnGroupAddon">
+                     <!--min="0" oninput="validity.valid||(value='');" max="99" restricts user input, everything except of numbers between min and max values are not allowed-->
+                     <input type="number" class="form-control input_box_style" placeholder="0" aria-label="Item counter" aria-describedby="btnGroupAddon" id="amountBox8" min="0" oninput="validity.valid||(value='');" max="99">
                   </div>
-                  <!--Plus button-->
-                  <button type="button" class="btn btn-outline-secondary">+</button>
                </div>
                <!--Button for adding items to busket-->
-               <button type="button" class="btn btn-outline-secondary description_font">Add to Basket</button>
+               <button type="button" class="btn btn-outline-secondary description_font" id="buttonDish8">Add to Basket</button>
             </div>
             <div class="col">
                <span class="contents_tt" data-bs-placement="bottom" title="Contains: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.">
@@ -227,17 +203,14 @@
                <p class="h5 mt-2 description_font">Chocolate Brownie - 3.20€</p>
                <!--Button group-->
                <div class="btn-group description_font" role="group" aria-label="Basic example">
-                  <!--Minus button-->
-                  <button type="button" class="btn btn-outline-secondary">-</button>
                   <!--Input Box-->
                   <div class="input-group">
-                     <input type="text" class="form-control input_box_style" placeholder="0" aria-label="Item counter" aria-describedby="btnGroupAddon">
+                     <!--min="0" oninput="validity.valid||(value='');" max="99" restricts user input, everything except of numbers between min and max values are not allowed-->
+                     <input type="number" class="form-control input_box_style" placeholder="0" aria-label="Item counter" aria-describedby="btnGroupAddon" id="amountBox9" min="0" oninput="validity.valid||(value='');" max="99">
                   </div>
-                  <!--Plus button-->
-                  <button type="button" class="btn btn-outline-secondary">+</button>
                </div>
                <!--Button for adding items to busket-->
-               <button type="button" class="btn btn-outline-secondary description_font">Add to Basket</button>
+               <button type="button" class="btn btn-outline-secondary description_font" id="buttonDish9">Add to Basket</button>
             </div>
          </div>
       </div>
