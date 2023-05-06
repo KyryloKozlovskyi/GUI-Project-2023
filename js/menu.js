@@ -3,6 +3,7 @@
 let amountBox1 = document.getElementById("amountBox1");
 //variable for eventlistener
 let buttonDish1 = document.getElementById("buttonDish1");
+//-------------------------------------------------------
 let amountBox2 = document.getElementById("amountBox2");
 let buttonDish2 = document.getElementById("buttonDish2") 
 let amountBox3 = document.getElementById("amountBox3");
@@ -32,7 +33,7 @@ buttonDish8.addEventListener("click", quantityUpdateDish8);
 buttonDish9.addEventListener("click", quantityUpdateDish9);
 
 
-//Updates dish quantity in Session storage
+//Updates the dish quantity in the Session storage
 function quantityUpdateDish1() {
     sessionStorage.grilled_cheese = amountBox1.value;
 }
@@ -68,7 +69,6 @@ function quantityUpdateDish8() {
 function quantityUpdateDish9() {
     sessionStorage.chocolate_brownie = amountBox9.value;
 }
-
 
 /* Session storage variable for easy copy/paste
 sessionStorage.grilled_chicken
