@@ -21,7 +21,7 @@ switch (day) {  //  Decides Soup of the Day
     break;
     case 3:
         mealOfDay = "Chorizo and Bean Soup";
-        document.getElementById("soup").style.backgroundImage = 'url(../images/soup/wednesday.jpg)';
+        document.getElementById("soup").style.backgroundImage = 'url(../images/soup/wednesday.png)';
     break;
     case 4:
         mealOfDay = "Butternut Squash and Chilli Soup";
@@ -37,4 +37,4 @@ switch (day) {  //  Decides Soup of the Day
 }
 
 //  Text outputted
-document.getElementById("soupText").innerHTML = ("Our freshly made Soup of the Day is our award winning " + mealOfDay + "!")
+document.getElementById("soupText").innerHTML = ("Our freshly made Soup of the Day is our award winning " + mealOfDay + "!");
