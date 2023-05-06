@@ -62,5 +62,5 @@
 
 /*Makes number input box arrows visible all the time*/
 input[type=number]::-webkit-inner-spin-button {
-    opacity: 1
+	opacity: 1;
 }

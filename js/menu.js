@@ -1,5 +1,4 @@
 //Kyrylo Kozlovskyi
-
 //variable for reading values from input box
 let amountBox1 = document.getElementById("amountBox1");
 //variable for eventlistener
@@ -69,3 +68,16 @@ function quantityUpdateDish8() {
 function quantityUpdateDish9() {
     sessionStorage.chocolate_brownie = amountBox9.value;
 }
+
+
+/* Session storage variable for easy copy/paste
+sessionStorage.grilled_chicken
+sessionStorage.grilled_cheese
+sessionStorage.ham_cheese
+sessionStorage.latte
+sessionStorage.espresso
+sessionStorage.tea
+sessionStorage.chocolate_chip
+sessionStorage.berry_muffin
+sessionStorage.chocolate_brownie
+*/
