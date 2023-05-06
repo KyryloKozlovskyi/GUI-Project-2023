@@ -54,16 +54,16 @@
                <!--Button group-->
                <div class="btn-group description_font" role="group" aria-label="Basic example">
                   <!--Minus button-->
-                  <button type="button" class="btn btn-outline-secondary">-</button>
+                  <button type="button" class="btn btn-outline-secondary" id="amountBox1Minus">-</button>
                   <!--Input Box-->
                   <div class="input-group">
-                     <input type="text" class="form-control input_box_style" placeholder="0" aria-label="Item counter" aria-describedby="btnGroupAddon">
+                     <input type="text" class="form-control input_box_style" placeholder="0" aria-label="Item counter" aria-describedby="btnGroupAddon" id="amountBox1">
                   </div>
                   <!--Plus button-->
-                  <button type="button" class="btn btn-outline-secondary">+</button>
+                  <button type="button" class="btn btn-outline-secondary" id="amountBox1Plus">+</button>
                </div>
                <!--Button for adding items to busket-->
-               <button type="button" class="btn btn-outline-secondary description_font">Add to Basket</button>
+               <button type="button" class="btn btn-outline-secondary description_font" id="buttonDish1">Add to Basket</button>
             </div>
             <div class="col">
                <span class="contents_tt" data-bs-placement="bottom" title="Contains: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.">
@@ -252,5 +252,7 @@
             new bootstrap.Tooltip(t)
          })
       </script>
+      <!--Javascript for manu page-->
+      <script src="../js/menu.js"></script>
    </body>
 </html>
