@@ -1,5 +1,4 @@
-# GUI Group Project 2023
-
+# GUI Group Project 2023 - Cafe website
 <b><h3>Made by Group J:</h3></b>
 <ul>
     <li><i>Adam Gallagher</i><br></li>
