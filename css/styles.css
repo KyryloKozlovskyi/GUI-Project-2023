@@ -11,6 +11,10 @@ Adam Code for styling Index + Checkout text
     font-weight: 400;
     font-style: normal;
 }
+/*For see-through buttons on carousel*/
+.btn-outline-light {
+    border-radius: 0px;
+}
 
 /*Italics*/
 .italics {
@@ -18,7 +22,6 @@ Adam Code for styling Index + Checkout text
     font-weight: 300;
     font-style: italic;
 }
-
 
 /*
     Styling for carousel to size carousel items, size background image and reduce opacity of background image - Fionn McCarthy
