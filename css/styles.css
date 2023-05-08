@@ -33,7 +33,7 @@ Adam Code for styling Index + Checkout text
 .container {  /* Layout for carousel container */
     position: absolute;
     bottom: 0;
-    padding-bottom: 30px;
+    padding-bottom: 10px;
     left: 0;
     right: 0;
 }
