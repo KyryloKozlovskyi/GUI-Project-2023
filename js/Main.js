@@ -172,7 +172,8 @@ function payment(){
     if(total > 0){ //  CHECK TOTAL IS GREATER THAN €0
         
         //  GET CURRENT TIME AND DATE
-            //https://stackoverflow.com/questions/221294/how-do-i-get-a-timestamp-in-javascript
+            //  https://stackoverflow.com/questions/221294/how-do-i-get-a-timestamp-in-javascript
+            
     var today = new Date();
     var date = today.getDate()+'-'+(today.getMonth()+1)+'-'+today.getFullYear();
     var time = today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds();
