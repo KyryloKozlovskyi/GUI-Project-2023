@@ -1,41 +1,52 @@
 // Adam Gallagher - Checkout //
 
-let dish1quant = 0;
-    if(sessionStorage.grilled_cheese > 0)
+let dish1quant = 0; //  INITILISE VARIABLE
+    if(sessionStorage.grilled_cheese > 0) //  IF SESSION STORAGE IS EMPTY SET 0 IF NOT SET QUANT TO SESSION STORAGE
     { dish1quant = sessionStorage.grilled_cheese }
-let dish2quant = 0;
-    if(sessionStorage.grilled_chicken > 0)
+
+let dish2quant = 0; //  INITILISE VARIABLE
+    if(sessionStorage.grilled_chicken > 0) //  IF SESSION STORAGE IS EMPTY SET 0 IF NOT SET QUANT TO SESSION STORAGE
     { dish2quant = sessionStorage.grilled_chicken }
-let dish3quant = 0;
-    if(sessionStorage.ham_cheese > 0)
+
+let dish3quant = 0; //  INITILISE VARIABLE
+    if(sessionStorage.ham_cheese > 0) //  IF SESSION STORAGE IS EMPTY SET 0 IF NOT SET QUANT TO SESSION STORAGE
     { dish3quant = sessionStorage.ham_cheese }
-let dish4quant = 0;
-let dish5quant = 0;
-    if(sessionStorage.latte > 0)
+
+let dish4quant = 0; //  INITILISE VARIABLE
+
+let dish5quant = 0; //  INITILISE VARIABLE
+    if(sessionStorage.latte > 0) //  IF SESSION STORAGE IS EMPTY SET 0 IF NOT SET QUANT TO SESSION STORAGE
     { dish5quant = sessionStorage.latte }
-let dish6quant = 0;
-    if(sessionStorage.espresso > 0)
+
+let dish6quant = 0; //  INITILISE VARIABLE
+    if(sessionStorage.espresso > 0) //  IF SESSION STORAGE IS EMPTY SET 0 IF NOT SET QUANT TO SESSION STORAGE
     { dish6quant = sessionStorage.espresso }
-let dish7quant = 0;
-    if(sessionStorage.tea > 0)
+
+let dish7quant = 0; //  INITILISE VARIABLE
+    if(sessionStorage.tea > 0) //  IF SESSION STORAGE IS EMPTY SET 0 IF NOT SET QUANT TO SESSION STORAGE
     { dish7quant = sessionStorage.tea }
-let dish8quant = 0;
-    if(sessionStorage.chocolate_chip > 0)
+
+let dish8quant = 0; //  INITILISE VARIABLE
+    if(sessionStorage.chocolate_chip > 0) //  IF SESSION STORAGE IS EMPTY SET 0 IF NOT SET QUANT TO SESSION STORAGE
     { dish8quant = sessionStorage.chocolate_chip }
-let dish9quant = 0;
-    if(sessionStorage.berry_muffin > 0)
+
+let dish9quant = 0; //  INITILISE VARIABLE
+    if(sessionStorage.berry_muffin > 0) //  IF SESSION STORAGE IS EMPTY SET 0 IF NOT SET QUANT TO SESSION STORAGE
     { dish9quant = sessionStorage.berry_muffin }
-let dish10quant = 0;
-    if(sessionStorage.chocolate_brownie > 0)
+
+let dish10quant = 0; //  INITILISE VARIABLE
+    if(sessionStorage.chocolate_brownie > 0) //  IF SESSION STORAGE IS EMPTY SET 0 IF NOT SET QUANT TO SESSION STORAGE
     { dish10quant = sessionStorage.chocolate_brownie }
+
 let cost = 0;
 let total = 0;
 let printTime = 0;
 let finishTime = 0;
 
 
-paymentScreen.style.display = "none";
+paymentScreen.style.display = "none"; //  HIDE PAYMENT SUCCESSFUL SCREEN
 
+ //  BUTTONS TO ADD AND REMOVE ITEMS FROM BASKET
 function item_add_dish1(){
     dish1quant = Number(dish1quant) + 1;
     document.getElementById("item1").innerHTML = dish1quant;
@@ -45,6 +56,7 @@ function item_remove_dish1(){
     document.getElementById("item1").innerHTML = dish1quant;
 }
 
+ //  BUTTONS TO ADD AND REMOVE ITEMS FROM BASKET
 function item_add_dish2(){
     dish2quant = Number(dish2quant) + 1;
     document.getElementById("item2").innerHTML = dish2quant;
@@ -54,6 +66,7 @@ function item_remove_dish2(){
     document.getElementById("item2").innerHTML = dish2quant;
 }
 
+ //  BUTTONS TO ADD AND REMOVE ITEMS FROM BASKET
 function item_add_dish3(){
     dish3quant = Number(dish3quant) + 1;
     document.getElementById("item3").innerHTML = dish3quant;
@@ -63,6 +76,7 @@ function item_remove_dish3(){
     document.getElementById("item3").innerHTML = dish3quant;
 }
 
+ //  BUTTONS TO ADD AND REMOVE ITEMS FROM BASKET
 function item_add_dish4(){
     dish4quant = Number(dish4quant) + 1;
     document.getElementById("item4").innerHTML = dish4quant;
@@ -72,6 +86,7 @@ function item_remove_dish4(){
     document.getElementById("item4").innerHTML = dish4quant;
 }
 
+ //  BUTTONS TO ADD AND REMOVE ITEMS FROM BASKET
 function item_add_dish5(){
     dish5quant = Number(dish5quant) + 1;
     document.getElementById("item5").innerHTML = dish5quant;
@@ -81,6 +96,7 @@ function item_remove_dish5(){
     document.getElementById("item5").innerHTML = dish5quant;
 }
 
+ //  BUTTONS TO ADD AND REMOVE ITEMS FROM BASKET
 function item_add_dish6(){
     dish6quant = Number(dish6quant) + 1;
     document.getElementById("item6").innerHTML = dish6quant;
@@ -90,6 +106,7 @@ function item_remove_dish6(){
     document.getElementById("item6").innerHTML = dish6quant;
 }
 
+ //  BUTTONS TO ADD AND REMOVE ITEMS FROM BASKET
 function item_add_dish7(){
     dish7quant = Number(dish7quant) + 1;
     document.getElementById("item7").innerHTML = dish7quant;
@@ -99,6 +116,7 @@ function item_remove_dish7(){
     document.getElementById("item7").innerHTML = dish7quant;
 }
 
+ //  BUTTONS TO ADD AND REMOVE ITEMS FROM BASKET
 function item_add_dish8(){
     dish8quant = Number(dish8quant) + 1;
     document.getElementById("item8").innerHTML = dish8quant;
@@ -108,6 +126,7 @@ function item_remove_dish8(){
     document.getElementById("item8").innerHTML = dish8quant;
 }
 
+ //  BUTTONS TO ADD AND REMOVE ITEMS FROM BASKET
 function item_add_dish9(){
     dish9quant = Number(dish9quant) + 1;
     document.getElementById("item9").innerHTML = dish9quant;
@@ -117,6 +136,7 @@ function item_remove_dish9(){
     document.getElementById("item9").innerHTML = dish9quant;
 }
 
+ //  BUTTONS TO ADD AND REMOVE ITEMS FROM BASKET
 function item_add_dish10(){
     dish10quant = Number(dish10quant) + 1;
     document.getElementById("item10").innerHTML = dish10quant;
@@ -126,12 +146,14 @@ function item_remove_dish10(){
     document.getElementById("item10").innerHTML = dish10quant;
 }
 
+ //  BUTTONS TO ADD AND REMOVE ITEMS FROM BASKET
 function update_cost(){
     total = dish1quant*2.99 + dish2quant*5.99 + dish3quant*3.99 + dish4quant*4.99 + dish5quant*3.99 + dish6quant*2.99 + dish7quant*2.50 + dish8quant*2 + dish9quant*2.50 + dish10quant*3.20;
     cost = Math.round((total + Number.EPSILON) * 100) / 100;
     document.getElementById("Ammount").innerHTML = "€"+cost;
 }
 
+ //  UPDATE MIDDLE BOX OF BUTTONS
 function update_vars(){
     document.getElementById("item1").innerHTML = dish1quant;
     document.getElementById("item2").innerHTML = dish2quant;
@@ -145,13 +167,18 @@ function update_vars(){
     document.getElementById("item10").innerHTML = dish10quant;
 }
 
+ //  PAY NOW BUTTON  //
 function payment(){
-    if(total > 0){
+    if(total > 0){ //  CHECK TOTAL IS GREATER THAN €0
+        
+        //  GET CURRENT TIME AND DATE
     var today = new Date();
     var date = today.getDate()+'-'+(today.getMonth()+1)+'-'+today.getFullYear();
     var time = today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds();
     var dateTime = date+' '+time;
-        printTime = (dateTime);
+        printTime = (dateTime); 
+
+         //  GET TIME 1 HOUR FROM NOW
         if(today.getHours() > 24){finishTime = (today.getHours()+1) + ":" + today.getMinutes() + ":" + today.getSeconds();}
         else{finishTime = (today.getHours()-11) + ":" + today.getMinutes() + ":" + today.getSeconds();}
 
@@ -162,7 +189,7 @@ function payment(){
 
     paymentScreen.style.display = "block";
     shoppingCart.style.display = "none";
-    }else{alert("You must add an item to continue to payment page!");}
+    }else{alert("You must add an item to continue to payment page!");} //  FALLBACK FOR NO ITEM IN BASKET
 }
 
 // END OF CHECKOUT JS //

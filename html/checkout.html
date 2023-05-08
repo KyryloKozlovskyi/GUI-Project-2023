@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/styles.css">
 
-    <title>Java Cafe and Restaurant/home</title>
+    <title>Click and Collect</title>
   </head>
     <body onload="update_vars(), update_cost()" class="description_font">
     <!-- Navbar for easy use - Fionn McCarthy -->
@@ -28,6 +28,7 @@
 
     <!--      Adam Gallagher      -->
 
+    <!--  Container for styling of Main page  -->
     <style>
         .container{
                     display: grid;
@@ -36,13 +37,12 @@
                     grid-gap: 60px;
                     margin: 0px;
                   }
-
     </style>
 
     <br>
 
     <br>
-    <div class="container">
+    <div class="container"><!--  LEFT HAND SIDE TABLE OF CONTENT  -->
         <div><div class="row">
             <div class="col-4">
               <div id="list-example" class="list-group">
@@ -52,128 +52,139 @@
                 <a class="list-group-item list-group-item-action bg-primary" href="#list-item-8" style="color: #000;">Desserts</a>
               </div>
             </div>
-          
+            
+            <!--  Scrolling Menu in centre of page  -->
             <div class="col-8" style="height: 600px;overflow-y: scroll;">
               <div data-bs-spy="scroll" data-bs-target="#list-example" data-bs-smooth-scroll="true" class="scrollspy-example" tabindex="0">
     
                 <h4 id="list-item-1">
-                    Grilled Cheese Sandwich 
+                    Grilled Cheese Sandwich <!--  ITEM NAME  -->
                     <div class="btn-group" role="group" aria-label="Basic example">
-                    <button type="button" class="btn btn-primary" onclick="item_remove_dish1(),update_cost()">-</button>
+                    <button type="button" class="btn btn-primary" onclick="item_remove_dish1(),update_cost()">-</button><!--  REMOVE AND UPDATE ITEM COUNT AND COST  -->
                     <div class="btn btn-primary" id="item1">0</div>
-                    <button type="button" class="btn btn-primary" onclick="item_add_dish1(),update_cost()">+</button>
+                    <button type="button" class="btn btn-primary" onclick="item_add_dish1(),update_cost()">+</button><!--  REMOVE AND UPDATE ITEM COUNT AND COST  -->
                   </div>
                 </h4>
-                <h6>€2.99</h6>
+                <h6>€2.99</h6><!--  COST OF ITEM  -->
+                <!--  IMAGE AND BREIF DESCRIPTION  -->
                 <img src="../images/menu_images/grilled_cheese_sandwich.png" alt="Soup Picture" width="200px">
                 <p>Our tasty tasty meals are all homemade in house today, <i class="italics">if you have any allergy requirements please contact a member of staff for more information</i></p>
 
                 <h4 id="list-item-2">
-                  Grilled Chicken Sandwich
+                  Grilled Chicken Sandwich <!--  ITEM NAME  -->
                   <div class="btn-group" role="group" aria-label="Basic example">
-                  <button type="button" class="btn btn-primary" onclick="item_remove_dish2(),update_cost()">-</button>
+                  <button type="button" class="btn btn-primary" onclick="item_remove_dish2(),update_cost()">-</button><!--  REMOVE AND UPDATE ITEM COUNT AND COST  -->
                   <div class="btn btn-primary" id="item2">0</div>
-                  <button type="button" class="btn btn-primary" onclick="item_add_dish2(),update_cost()">+</button>
+                  <button type="button" class="btn btn-primary" onclick="item_add_dish2(),update_cost()">+</button><!--  REMOVE AND UPDATE ITEM COUNT AND COST  -->
                   </div>
                 </h4>
-                <h6>€5.99</h6>
+                <h6>€5.99</h6><!--  COST OF ITEM  -->
+                <!--  IMAGE AND BREIF DESCRIPTION  -->
                 <img src="../images/menu_images/grilled_chicken_sandwich.png" alt="Soup Picture" width="200px">
                 <p>Our tasty tasty meals are all homemade in house today, <i class="italics">if you have any allergy requirements please contact a member of staff for more information</i></p>          
 
                 <h4 id="list-item-3">
-                  Ham and Cheese Sandwich
+                  Ham and Cheese Sandwich <!--  ITEM NAME  -->
                   <div class="btn-group" role="group" aria-label="Basic example">
-                  <button type="button" class="btn btn-primary" onclick="item_remove_dish3(),update_cost()">-</button>
+                  <button type="button" class="btn btn-primary" onclick="item_remove_dish3(),update_cost()">-</button><!--  REMOVE AND UPDATE ITEM COUNT AND COST  -->
                   <div class="btn btn-primary" id="item3">0</div>
-                  <button type="button" class="btn btn-primary" onclick="item_add_dish3(),update_cost()">+</button>
+                  <button type="button" class="btn btn-primary" onclick="item_add_dish3(),update_cost()">+</button><!--  REMOVE AND UPDATE ITEM COUNT AND COST  -->
                   </div>
                 </h4>
-                <h6>€3.99</h6>
+                <h6>€3.99</h6><!--  COST OF ITEM  -->
+                <!--  IMAGE AND BREIF DESCRIPTION  -->
                 <img src="../images/menu_images/ham_and_cheese_sandwich.png" alt="hamAndCheesePicture" width="200px">
                 <p>Our tasty tasty meals are all homemade in house today, <i class="italics">if you have any allergy requirements please contact a member of staff for more information</i></p>
 
                 <h4 id="list-item-4">
-                  Soup Of The Day
+                  Soup Of The Day <!--  ITEM NAME  -->
                   <div class="btn-group" role="group" aria-label="Basic example">
-                  <button type="button" class="btn btn-primary" onclick="item_remove_dish4(),update_cost()">-</button>
+                  <button type="button" class="btn btn-primary" onclick="item_remove_dish4(),update_cost()">-</button><!--  REMOVE AND UPDATE ITEM COUNT AND COST  -->
                   <div class="btn btn-primary" id="item4">0</div>
-                  <button type="button" class="btn btn-primary" onclick="item_add_dish4(),update_cost()">+</button>
+                  <button type="button" class="btn btn-primary" onclick="item_add_dish4(),update_cost()">+</button><!--  REMOVE AND UPDATE ITEM COUNT AND COST  -->
                   </div>
                 </h4>
-                <h6>€4.99</h6>
+                <h6>€4.99</h6><!--  COST OF ITEM  -->
+                <!--  IMAGE AND BREIF DESCRIPTION  -->
                 <p id="soupOfTheDay"></p>
                 <img id="soupImg" src="" alt="Soup Picture" width="200px">
                 <p>Our tasty tasty meals are all homemade in house today, <i class="italics">if you have any allergy requirements please contact a member of staff for more information</i></p>
 
                 <h4 id="list-item-5">
-                  Latte
+                  Latte <!--  ITEM NAME  -->
                   <div class="btn-group" role="group" aria-label="Basic example">
-                  <button type="button" class="btn btn-primary" onclick="item_remove_dish5(),update_cost()">-</button>
+                  <button type="button" class="btn btn-primary" onclick="item_remove_dish5(),update_cost()">-</button><!--  REMOVE AND UPDATE ITEM COUNT AND COST  -->
                   <div class="btn btn-primary" id="item5">0</div>
-                  <button type="button" class="btn btn-primary" onclick="item_add_dish5(),update_cost()">+</button>
+                  <button type="button" class="btn btn-primary" onclick="item_add_dish5(),update_cost()">+</button><!--  REMOVE AND UPDATE ITEM COUNT AND COST  -->
                   </div>
                 </h4>
-                <h6>€3.99</h6>
+                <h6>€3.99</h6><!--  COST OF ITEM  -->
+                <!--  IMAGE AND BREIF DESCRIPTION  -->
                 <img src="../images/menu_images/latte.png" alt="Soup Picture" width="200px">
                 <p>All of our coffees are brewed by a trained barista using only the best beans</p>
               
                 <h4 id="list-item-6">
                   Espresso  
                   <div class="btn-group" role="group" aria-label="Basic example">
-                  <button type="button" class="btn btn-primary" onclick="item_remove_dish6(),update_cost()">-</button>
+                  <button type="button" class="btn btn-primary" onclick="item_remove_dish6(),update_cost()">-</button><!--  REMOVE AND UPDATE ITEM COUNT AND COST  -->
                   <div class="btn btn-primary" id="item6">0</div>
-                  <button type="button" class="btn btn-primary" onclick="item_add_dish6(),update_cost()">+</button>
+                  <button type="button" class="btn btn-primary" onclick="item_add_dish6(),update_cost()">+</button><!--  REMOVE AND UPDATE ITEM COUNT AND COST  -->
                   </div>
                 </h4>
-                <h6>€2.99</h6>
+                <h6>€2.99</h6><!--  COST OF ITEM  -->
+                <!--  IMAGE AND BREIF DESCRIPTION  -->
                 <img src="../images/menu_images/espresso.png" alt="Soup Picture" width="200px">
                 <p>All of our coffees are brewed by a trained barista using only the best beans</p>
             
                 <h4 id="list-item-7">
-                  Tea 
+                  Tea <!--  ITEM NAME  --> 
                   <div class="btn-group" role="group" aria-label="Basic example">
-                  <button type="button" class="btn btn-primary" onclick="item_remove_dish7(),update_cost()">-</button>
+                  <button type="button" class="btn btn-primary" onclick="item_remove_dish7(),update_cost()">-</button><!--  REMOVE AND UPDATE ITEM COUNT AND COST  -->
                   <div class="btn btn-primary" id="item7">0</div>
-                  <button type="button" class="btn btn-primary" onclick="item_add_dish7(),update_cost()">+</button>
+                  <button type="button" class="btn btn-primary" onclick="item_add_dish7(),update_cost()">+</button><!--  REMOVE AND UPDATE ITEM COUNT AND COST  -->
                   </div>
                 </h4>
-                <h6>€2.50</h6>
+                <h6>€2.50</h6><!--  COST OF ITEM  -->
+                <!--  IMAGE AND BREIF DESCRIPTION  -->
                 <img src="../images/menu_images/tea.png" alt="Soup Picture" width="200px">
                 <p>All of our teas are brewed by a trained barista using only the best beans</p>
           
                 <h4 id="list-item-8">
-                  Chocolate Chip Cookie     
+                  Chocolate Chip Cookie <!--  ITEM NAME  -->     
                   <div class="btn-group" role="group" aria-label="Basic example">
-                  <button type="button" class="btn btn-primary" onclick="item_remove_dish8(),update_cost()">-</button>
+                  <button type="button" class="btn btn-primary" onclick="item_remove_dish8(),update_cost()">-</button><!--  REMOVE AND UPDATE ITEM COUNT AND COST  -->
                   <div class="btn btn-primary" id="item8">0</div>
-                  <button type="button" class="btn btn-primary" onclick="item_add_dish8(),update_cost()">+</button>
+                  <button type="button" class="btn btn-primary" onclick="item_add_dish8(),update_cost()">+</button><!--  REMOVE AND UPDATE ITEM COUNT AND COST  -->
                   </div>
                 </h4>
-                <h6>€2</h6>
+                <h6>€2</h6><!--  COST OF ITEM  -->
+                <!--  IMAGE AND BREIF DESCRIPTION  -->
                 <img src="../images/menu_images/chocolate_chip_cookie.png" alt="Soup Picture" width="200px">
                 <p>Our tasty deserts are all homemade in house today, <i class="italics">if you have any allergy requirements please contact a member of staff for more information</i></p>
             
                 <h4 id="list-item-9">
-                  Berry Muffin   
+                  Berry Muffin <!--  ITEM NAME  -->   
                   <div class="btn-group" role="group" aria-label="Basic example">
-                  <button type="button" class="btn btn-primary" onclick="item_remove_dish9(),update_cost()">-</button>
+                  <button type="button" class="btn btn-primary" onclick="item_remove_dish9(),update_cost()">-</button><!--  REMOVE AND UPDATE ITEM COUNT AND COST  -->
                   <div class="btn btn-primary" id="item9">0</div>
-                  <button type="button" class="btn btn-primary" onclick="item_add_dish9(),update_cost()">+</button>
+                  <button type="button" class="btn btn-primary" onclick="item_add_dish9(),update_cost()">+</button><!--  REMOVE AND UPDATE ITEM COUNT AND COST  -->
                   </div>
                 </h4>
-                <h6>€2.50</h6>
+                <h6>€2.50</h6><!--  COST OF ITEM  -->
+                <!--  IMAGE AND BREIF DESCRIPTION  -->
                 <img src="../images/menu_images/berry_muffin.png" alt="Soup Picture" width="200px">
                 <p>Our tasty deserts are all homemade in house today, <i class="italics">if you have any allergy requirements please contact a member of staff for more information</i></p>
       
                 <h4 id="list-item-10">
-                  Chocolate Brownie       
+                  Chocolate Brownie <!--  ITEM NAME  -->       
                   <div class="btn-group" role="group" aria-label="Basic example">
-                  <button type="button" class="btn btn-primary" onclick="item_remove_dish10(),update_cost()">-</button>
+                  <button type="button" class="btn btn-primary" onclick="item_remove_dish10(),update_cost()">-</button><!--  REMOVE AND UPDATE ITEM COUNT AND COST  -->
                   <div class="btn btn-primary" id="item10">0</div>
-                  <button type="button" class="btn btn-primary" onclick="item_add_dish10(),update_cost()">+</button>
+                  <button type="button" class="btn btn-primary" onclick="item_add_dish10(),update_cost()">+</button><!--  REMOVE AND UPDATE ITEM COUNT AND COST  -->
                   </div>
                 </h4>
-                <h6>€3.20</h6>
+                <h6>€3.20</h6><!--  COST OF ITEM  -->
+                <!--  IMAGE AND BREIF DESCRIPTION  -->
                 <img src="../images/menu_images/chocolate_brownie.png" alt="Soup Picture" width="200px">
                 <p>Our tasty deserts are all homemade in house today, <i class="italics">if you have any allergy requirements please contact a member of staff for more information</i></p>
 
@@ -183,17 +194,17 @@
     </div>
         <div id="box2">
             <div class="btn-group" role="group" aria-label="Payment">
-                <button type="button" class="btn btn-primary" onclick="payment()">Pay Now</button>
+                <button type="button" class="btn btn-primary" onclick="payment()">Pay Now</button><!--  HIDE GOOGLE MAP EMBED AND REVEAL PAYMENT CONFIRMATION  -->
                 <button type="button" class="btn btn-primary" id="Ammount">€0</button>
             </div>
             <br> 
             <br>
-            <div id="shoppingCart">
+            <div id="shoppingCart"><!--  GOOGLE MAP EMBED AND CONTACT DETAILS (to be hidden when paid)  -->
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2385.8168038988906!2d-9.050635057806469!3d53.27490199019553!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x485b96e578a5483d%3A0x14df69e3cb615257!2s24%20Eyre%20Square%2C%20Galway%2C%20H91%20XP84!5e0!3m2!1sen!2sie!4v1682899791893!5m2!1sen!2sie" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             <H3>Contact Us:</H3>
             <h5>Phone: 083 847 2894<br>Email: JavaCafe@softewaredev.com</h5>
             </div>
-            <div id="paymentScreen">
+            <div id="paymentScreen"><!--  PAYMENT SCREEN REVEALED AFTER PAYMENT IS MADE  -->
             <div style="height: 75px;">
                 <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
                     <symbol id="check-circle-fill" viewBox="0 0 16 16">
@@ -208,7 +219,7 @@
                 </div>
                 <table class="table">
                 <thead>
-                <tr>
+                <tr><!--  TABLE OF ORDER INFORMATION  -->
                 <th scope="col">Order #</th>
                 <th scope="col">Print Time</th>
                 <th scope="col">Ready For</th>
@@ -227,10 +238,10 @@
             </div>
             <br><br><br><br><br><br>
             <center>
-            <img src="../images/checkout_images/Thankyou.gif" alt="Thank You Message">
+            <img src="../images/checkout_images/Thankyou.gif" alt="Thank You Message"><!--  THANK YOU GIF  -->
             </center>
         </div></div>
     </div>
-    <script src="../js/Main.js"></script>
+    <script src="../js/Main.js"></script><!--  LINK JAVASCRIPT PAGE  -->
     </body>
     
