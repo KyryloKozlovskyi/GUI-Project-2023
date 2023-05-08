@@ -46,7 +46,7 @@ function item_remove_dish1(){
 }
 
 function item_add_dish2(){
-    dish2quant = Number(dish2quan) + 1;
+    dish2quant = Number(dish2quant) + 1;
     document.getElementById("item2").innerHTML = dish2quant;
 }
 function item_remove_dish2(){
