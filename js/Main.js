@@ -152,7 +152,8 @@ function payment(){
     var time = today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds();
     var dateTime = date+' '+time;
         printTime = (dateTime);
-        finishTime = (today.getHours()+1) + ":" + today.getMinutes() + ":" + today.getSeconds();
+        if(today.getHours() > 24){finishTime = (today.getHours()+1) + ":" + today.getMinutes() + ":" + today.getSeconds();}
+        else{finishTime = (today.getHours()-11) + ":" + today.getMinutes() + ":" + today.getSeconds();}
 
         document.getElementById("orderNum").innerHTML = Math.floor(Math.random() * 1000) + Math.floor(Math.random() * 1000);
         document.getElementById("price-of").innerHTML = cost;
@@ -161,7 +162,7 @@ function payment(){
 
     paymentScreen.style.display = "block";
     shoppingCart.style.display = "none";
-    }
+    }else{alert("You must add an item to continue to payment page!");}
 }
 
 // END OF CHECKOUT JS //
