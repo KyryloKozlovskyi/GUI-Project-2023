@@ -208,32 +208,32 @@ var mealOfDay, soupImg;
 switch (day) {  //  Decides Soup of the Day
     case 0:
         mealOfDay = "Tomato and Basil Soup";    //  Soup description
-        soupImg = "../images/soup/sunday.jpg";
+        soupImg = "images/soup/sunday.jpg";
 
     break;
     case 1:
         mealOfDay = "Seafood Chowder";
-        soupImg = "../images/soup/monday.jpg";
+        soupImg = "images/soup/monday.jpg";
     break;
     case 2:
         mealOfDay = "Leek and Potato Soup";
-        soupImg = "../images/soup/tuesday.jpg";
+        soupImg = "images/soup/tuesday.jpg";
     break;
     case 3:
         mealOfDay = "Chorizo and Bean Soup";
-        soupImg = "../images/soup/wednesday.png";
+        soupImg = "images/soup/wednesday.png";
     break;
     case 4:
         mealOfDay = "Butternut Squash and Chilli Soup";
-        soupImg = "../images/soup/thursday.jpg";
+        soupImg = "images/soup/thursday.jpg";
         break;
     case 5:
         mealOfDay = "Carrot and Coriander Soup";
-        soupImg = "../images/soup/friday.jpg";
+        soupImg = "images/soup/friday.jpg";
     break;
     default:
         mealOfDay = "Potato and Leek Soup";
-        soupImg = "../images/soup/saturday.jpg";
+        soupImg = "images/soup/saturday.jpg";
 }
 
 //  Text outputted
