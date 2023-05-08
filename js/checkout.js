@@ -41,7 +41,6 @@ let dish10quant = 0; //  INITILISE VARIABLE
 let cost = 0;
 let total = 0;
 let printTime = 0;
-let finishTime = 0;
 
 
 paymentScreen.style.display = "none"; //  HIDE PAYMENT SUCCESSFUL SCREEN
@@ -173,19 +172,20 @@ function payment(){
         
         //  GET CURRENT TIME AND DATE
     var today = new Date();
+    let finishTime = new Date(today.getFullYear(), today.getMonth(), today.getDay(), (today.getHours()+1)%24, today.getMinutes(), today.getSeconds());
     var date = today.getDate()+'-'+(today.getMonth()+1)+'-'+today.getFullYear();
     var time = today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds();
-    var dateTime = date+' '+time;
+    var dateTime = date+'  '+time;
         printTime = (dateTime); 
 
          //  GET TIME 1 HOUR FROM NOW
-        if(today.getHours() > 24){finishTime = (today.getHours()+1) + ":" + today.getMinutes() + ":" + today.getSeconds();}
-        else{finishTime = (today.getHours()-11) + ":" + today.getMinutes() + ":" + today.getSeconds();}
 
         document.getElementById("orderNum").innerHTML = Math.floor(Math.random() * 1000) + Math.floor(Math.random() * 1000);
         document.getElementById("price-of").innerHTML = cost;
         document.getElementById("print").innerHTML = printTime;
-        document.getElementById("finish").innerHTML = finishTime;
+        //  Changes printTime to completionTime - Fionn McCarthy (I only wrote 2 lines of code here for a quick bug fix)
+        printTime = (finishTime.getHours() + ":" +  finishTime.getMinutes() + ":" + finishTime.getSeconds());
+        document.getElementById("finish").innerHTML = printTime;
 
     paymentScreen.style.display = "block";
     shoppingCart.style.display = "none";
@@ -208,32 +208,32 @@ var mealOfDay, soupImg;
 switch (day) {  //  Decides Soup of the Day
     case 0:
         mealOfDay = "Tomato and Basil Soup";    //  Soup description
-        soupImg = "../images/soup/sunday.jpg";
+        soupImg = "images/soup/sunday.jpg";
 
     break;
     case 1:
         mealOfDay = "Seafood Chowder";
-        soupImg = "../images/soup/monday.jpg";
+        soupImg = "images/soup/monday.jpg";
     break;
     case 2:
         mealOfDay = "Leek and Potato Soup";
-        soupImg = "../images/soup/tuesday.jpg";
+        soupImg = "images/soup/tuesday.jpg";
     break;
     case 3:
         mealOfDay = "Chorizo and Bean Soup";
-        soupImg = "../images/soup/wednesday.png";
+        soupImg = "images/soup/wednesday.png";
     break;
     case 4:
         mealOfDay = "Butternut Squash and Chilli Soup";
-        soupImg = "../images/soup/thursday.jpg";
+        soupImg = "images/soup/thursday.jpg";
         break;
     case 5:
         mealOfDay = "Carrot and Coriander Soup";
-        soupImg = "../images/soup/friday.jpg";
+        soupImg = "images/soup/friday.jpg";
     break;
     default:
         mealOfDay = "Potato and Leek Soup";
-        soupImg = "../images/soup/saturday.jpg";
+        soupImg = "images/soup/saturday.jpg";
 }
 
 //  Text outputted
